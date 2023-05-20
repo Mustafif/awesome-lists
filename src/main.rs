@@ -74,7 +74,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         ));
     }
 
-    tokio::fs::write("awesome_lists.md", markdown).await?;
+    tokio::fs::write("README.md", markdown).await?;
 
     Ok(())
 }
